@@ -5,6 +5,13 @@ public class Tester {
       Scanner kbReader = new Scanner(System.in);
       System.out.print("Enter an integer: ");
       int userInt = kbReader.nextInt();
-      string oddEven;
+      String oddEven;
+      if (userInt % 2 == 0) {
+         oddEven = "even";
+      }
+      else {
+         oddEven = "odd";
+      }
+      System.out.printf("The integer %d is %s.\n", userInt, oddEven);
    }
 }
